@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/appStartingImage"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:src="@drawable/game_starting_image"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/selectLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appStartingImage"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Select Your Level"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black">
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEasy"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_below="@+id/selectLevel"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#57B3FA"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:id="@+id/easyText"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_marginStart="16dp"
+               android:text="Easy"
+               android:textSize="24sp"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:fontFamily="sans-serif-condensed"
+               android:gravity="center_vertical">
+           </TextView>
+
+           <ImageView
+               android:layout_width="88dp"
+               android:layout_height="match_parent"
+               android:layout_alignParentEnd="true"
+               android:layout_marginEnd="8dp"
+               android:src="@drawable/easy_logo">
+           </ImageView>
+       </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMedium"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_below="@+id/cvEasy"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#DAEA4B"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:text="Medium"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical">
+        </TextView>
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/medium_logo">
+        </ImageView>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHard"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_below="@+id/cvMedium"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#FA577D"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/hardText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:text="Hard"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical">
+        </TextView>
+
+        <ImageView
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/hard_logo">
+        </ImageView>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>
